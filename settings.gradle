@@ -1,0 +1,34 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            credentials {
+                username '606fd2113a10edbf36aacef2'
+                password 'g82f-NwT6gy3'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2093209-release-rqLhX5/'
+        }
+        maven {
+            credentials {
+                username '606fd2113a10edbf36aacef2'
+                password 'g82f-NwT6gy3'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2093209-snapshot-GjolRK/'
+        }
+    }
+}
+rootProject.name = "PushMavenToAliyun"
+include ':app'
+include ':mylog'
